@@ -1,0 +1,39 @@
+2011/07/28 17:34:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'abc.child_info' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `child_info`.
+in /home/psjinx/workspace/work/policy_innovations/abc/index.php (13)
+2011/07/28 17:36:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'abc.child_info' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `child_info`.
+in /home/psjinx/workspace/work/policy_innovations/abc/index.php (13)
+2011/07/28 17:36:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'abc.child_info' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `child_info`.
+in /home/psjinx/workspace/work/policy_innovations/abc/index.php (13)
+2011/07/28 17:37:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'abc.child_info' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `child_info`.
+in /home/psjinx/workspace/work/policy_innovations/abc/index.php (13)
+2011/07/28 17:44:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'abc.child_info' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `child_info`.
+in /home/psjinx/workspace/work/policy_innovations/abc/index.php (13)
+2011/07/28 17:47:17 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/psjinx/workspace/work/policy_innovations/abc/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CAssetManager.php:112
+Stack trace:
+#0 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CAssetManager.php(97): CAssetManager->setBasePath('/home/psjinx/wo...')
+#1 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CAssetManager.php(207): CAssetManager->getBasePath()
+#2 /home/psjinx/softwares/yii-1.1.8.r3324/framework/gii/GiiModule.php(137): CAssetManager->publish('/home/psjinx/so...')
+#3 /home/psjinx/softwares/yii-1.1.8.r3324/framework/base/CComponent.php(112): GiiModule->getAssetsUrl()
+#4 /home/psjinx/softwares/yii-1.1.8.r3324/framework/base/CModule.php(88): CComponent->__get('assetsUrl')
+#5 /home/psjinx/softwares/yii-1.1.8.r3324/framework/gii/views/layouts/main.php(5): CModule->__get('assetsUrl')
+#6 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/psjinx/so...')
+#7 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/psjinx/so...', Array, true)
+#8 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/widgets/CContentDecorator.php(78): CBaseController->renderFile('/home/psjinx/so...', Array, true)
+#9 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/widgets/CContentDecorator.php(56): CContentDecorator->decorate('<div class="con...')
+#10 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#11 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CBaseController.php(199): COutputProcessor->run()
+#12 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CBaseController.php(294): CBaseController->endWidget('CContentDecorat...')
+#13 /home/psjinx/softwares/yii-1.1.8.r3324/framework/gii/views/layouts/column1.php(7): CBaseController->endContent()
+#14 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/psjinx/so...')
+#15 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/psjinx/so...', Array, true)
+#16 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CController.php(781): CBaseController->renderFile('/home/psjinx/so...', Array, true)
+#17 /home/psjinx/softwares/yii-1.1.8.r3324/framework/gii/controllers/DefaultController.php(17): CController->render('index')
+#18 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(50): DefaultController->actionIndex()
+#19 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#20 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#21 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('')
+#23 /home/psjinx/softwares/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('gii')
+#24 /home/psjinx/softwares/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#25 /home/psjinx/workspace/work/policy_innovations/abc/index.php(13): CApplication->run()
+#26 {main} REQUEST_URI=/abc/index.php?r=gii

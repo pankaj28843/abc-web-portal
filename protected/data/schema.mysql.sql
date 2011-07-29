@@ -5,6 +5,17 @@ CREATE TABLE tbl_user (
     email VARCHAR(128) NOT NULL
 );
 
+CREATE TABLE tbl_child_info (
+    id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    child_id VARCHAR(128) NOT NULL,
+    school_id VARCHAR(128) NOT NULL,
+    class_id INTEGER NOT NULL,
+    admin_no VARCHAR(128) NOT NULL,
+    sex_id VARCHAR(128) NOT NULL,
+    child_name VARCHAR(128) NOT NULL,
+    child_status INTEGER NOT NULL
+);
+
 INSERT INTO tbl_user (username, password, email) VALUES ('test1', 'pass1', 'test1@example.com');
 INSERT INTO tbl_user (username, password, email) VALUES ('test2', 'pass2', 'test2@example.com');
 INSERT INTO tbl_user (username, password, email) VALUES ('test3', 'pass3', 'test3@example.com');
